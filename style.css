@@ -14,7 +14,7 @@ body {
 
 /* Header Styling */
 header {
-  background-color: #007bff;
+  background-color: #0056b3; /* Darker Blue */
   color: white;
   padding: 20px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -34,31 +34,48 @@ main {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
+  max-width: 650px; /* Slightly wider to fit two buttons */
   width: 100%;
 }
 
 /* Download Button Styling */
 .download-container {
   margin: 30px 0;
+  display: flex; /* Arrange buttons side-by-side */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  gap: 20px; /* Space between buttons */
+  justify-content: center;
 }
 
 .download-button {
   display: inline-block;
-  background-color: #28a745; /* Green color for action */
   color: white;
   padding: 12px 25px;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 1.1em;
+  font-size: 1.05em;
   font-weight: bold;
   transition: background-color 0.3s ease;
   border: none;
   cursor: pointer;
+  min-width: 250px; /* Ensure buttons are a decent size */
 }
 
-.download-button:hover {
+/* Specific colors for visual separation */
+.r-script {
+  background-color: #28a745; /* Green for the script */
+}
+
+.r-script:hover {
   background-color: #218838;
+}
+
+.pdf-doc {
+  background-color: #dc3545; /* Red for the documentation */
+}
+
+.pdf-doc:hover {
+  background-color: #c82333;
 }
 
 /* Footer Styling */
@@ -72,6 +89,6 @@ footer {
 /* Message Area for Feedback */
 #message {
   margin-top: 20px;
-  color: #007bff;
+  color: #0056b3;
   font-weight: bold;
 }
