@@ -1,15 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const downloadLink = document.getElementById('downloadLink');
+    const downloadRLink = document.getElementById('downloadR');
+    const downloadPDFLink = document.getElementById('downloadPDF');
     const messageElement = document.getElementById('message');
 
-    // Add an event listener to the link
-    downloadLink.addEventListener('click', () => {
-        // Display a confirmation message after the click
-        messageElement.textContent = 'Download started! Thank you for downloading.';
+    // Function to handle the download click
+    const handleDownload = (fileName) => {
+        // Display a confirmation message
+        messageElement.textContent = `Download started for ${fileName}! Thank you.`;
         
         // Optionally, clear the message after a few seconds
         setTimeout(() => {
             messageElement.textContent = '';
         }, 5000); 
+    };
+
+    // Add event listeners to both links
+    downloadRLink.addEventListener('click', () => {
+        handleDownload('multivariate.r');
+    });
+
+    downloadPDFLink.addEventListener('click', () => {
+        handleDownload('text.pdf');
     });
 });
