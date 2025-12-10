@@ -1,0 +1,94 @@
+/* Basic Reset and Setup */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Header Styling */
+header {
+  background-color: #0056b3; /* Darker Blue */
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Area */
+main {
+  flex-grow: 1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 650px; /* Slightly wider to fit two buttons */
+  width: 100%;
+}
+
+/* Download Button Styling */
+.download-container {
+  margin: 30px 0;
+  display: flex; /* Arrange buttons side-by-side */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  gap: 20px; /* Space between buttons */
+  justify-content: center;
+}
+
+.download-button {
+  display: inline-block;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.05em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  min-width: 250px; /* Ensure buttons are a decent size */
+}
+
+/* Specific colors for visual separation */
+.r-script {
+  background-color: #28a745; /* Green for the script */
+}
+
+.r-script:hover {
+  background-color: #218838;
+}
+
+.pdf-doc {
+  background-color: #dc3545; /* Red for the documentation */
+}
+
+.pdf-doc:hover {
+  background-color: #c82333;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #ccc;
+  padding: 15px 0;
+  font-size: 0.9em;
+}
+
+/* Message Area for Feedback */
+#message {
+  margin-top: 20px;
+  color: #0056b3;
+  font-weight: bold;
+}
