@@ -196,6 +196,21 @@ t_{\mathrm{cal}}=\frac{\bar{d}-\mu_d}{\frac{S_d}{\sqrt n}}\sim t_{\alpha/2}\left
 ttest before == after
 
 
+Pearson correlation in stata: 
+pwcorr resting_hr age weight_kg height_cm fitness_score stress_level caffeine_mg, sig star(0.05) 
+pairwise correlation দেখাবে
+correlate resting_hr age weight_kg height_cm fitness_score stress_level caffeine_mg
+শুধু covariance matrix দেখাবে 
+
+ simple linear regression:
+reg resting_hr age weight_kg height_cm fitness_score stress_level caffeine_mg
+
+ Standardized regression (to compare strength)
+reg resting_hr age weight_kg height_cm fitness_score stress_level caffeine_mg, beta
+
+
+
+
 
 
 
